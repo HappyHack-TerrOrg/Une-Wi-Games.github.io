@@ -66,8 +66,117 @@ header>div#Logo>a {
 	color: white;
 }
 
-header>div#Logo>a {
+header>div#Logo>a>span {
 	font-size: 2.5em;
 	margin-left: 10px;
 	font-family: 'Nanum Gothic', sans-serif;
+}
+
+@madia (max-width: 950px)
+    header>div#Logo>a>img {
+	    margin-left: 15%;
+    }
+
+    #Logo {
+	    float: left;
+	    width: 30%;
+    }
+
+    #about {
+	    float: left;
+	    width: 37%;
+    }
+
+    #reg_auth {
+        float: right;
+	    width: 30%;
+    }
+}
+
+@madia (max-width: 949px) and (min-width: 525px) {
+	header>div#Logo>a>img {
+	    margin-left: 15%;
+    }
+	
+    #Logo {
+	    float: left;
+	    width: 50%;
+    }
+
+    #about {
+	    visibility: hidden;
+		display: none;
+    }
+
+    #reg_auth {
+        float: right;
+	    width: 50%;
+    }
+}
+
+@madia (max-width: 524px) {
+	header>div#Logo>a>img {
+	    margin-left: 5%;
+    }
+	
+    #Logo {
+	    width: 100%;
+    }
+
+    #about {
+	    visibility: hidden;
+		display: none;
+    }
+
+    #reg_auth {
+        visibility: hidden;
+		display: none;
+    }
+}
+
+#about {
+	text-align: center;
+	font-family: 'Roboto Slab', serif;
+	font-size: 1.4em;
+	padding-top: 10px;
+}
+
+#about>a {
+	color: white;
+}
+
+#about>a:hover {
+	color: #ccc;
+	border-bottom: 1px solid silver;
+}
+
+#about>a:last-child {
+	margin-left: 10%;
+}
+
+#reg_auth>a {
+	color: white;
+}
+
+#reg_auth>a:hover>div.btn {
+	border-bottom: 2px solid #00FF00;
+	margin-top: 7px;
+}
+
+#reg_auth>a:active>div.btn {
+	border-bottom: 0;
+	margin-top: 9px;
+}
+
+#reg_auth>a>div.btn {
+	float: right;
+	margin-right: 3%;
+	margin-top: 5px;
+	border-radius: 5px;
+	padding: 5px 9px;
+	font-size: 1.2em;
+	background-color: #006400;
+	text-shadow: #000000 0 0 2px;
+	border-bottom: 4px solid #00FF00;
+	font-family: 'Roboto Slab', serif;
 }
