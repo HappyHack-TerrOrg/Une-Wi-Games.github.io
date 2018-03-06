@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic|Roboto+Slab');
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Suez+One" 
 
 * {
 	margin: 0;
 	padding: 0;
 }
 
-body {
+body, html {
 	width: 100%;
 	height: 100%;
 }
@@ -56,41 +56,39 @@ header {
 	border-bottom: 5px solid #000000;
 }
 
-header>div#Logo>a>img {
+header>div#logo>a>img {
 	height: 50px;
 	width: 50px;
 	float: left;
 }
 
-header>div#Logo>a {
+header>div#logo>a {
 	color: white;
 }
 
-header>div#Logo>a>span {
+header>div#logo>a>span {
 	font-size: 2.5em;
 	margin-left: 10px;
-	font-family: 'Nanum Gothic', sans-serif;
+	font-family: 'Suez One', serif;
 }
 
-@madia (max-width: 950px)
-    header>div#Logo>a>img {
-	    margin-left: 15%;
-    }
+header>div#logo>a>img {
+	margin-left: 15%;
+}
 
-    #Logo {
-	    float: left;
-	    width: 30%;
-    }
+#logo {
+	float: left;
+	width: 30%;
+}
 
-    #about {
-	    float: left;
-	    width: 37%;
-    }
+#about {
+	float: left;
+	width: 37%;
+}
 
-    #reg_auth {
-        float: right;
-	    width: 30%;
-    }
+#reg_auth {
+    float: right;
+	width: 30%;
 }
 
 @madia (max-width: 949px) and (min-width: 525px) {
@@ -98,7 +96,7 @@ header>div#Logo>a>span {
 	    margin-left: 15%;
     }
 	
-    #Logo {
+    #logo {
 	    float: left;
 	    width: 50%;
     }
@@ -119,7 +117,7 @@ header>div#Logo>a>span {
 	    margin-left: 5%;
     }
 	
-    #Logo {
+    #logo {
 	    width: 100%;
     }
 
@@ -138,7 +136,7 @@ header>div#Logo>a>span {
 	text-align: center;
 	font-family: 'Roboto Slab', serif;
 	font-size: 1.4em;
-	padding-top: 10px;
+	padding-top: 5px;
 }
 
 #about>a {
@@ -179,4 +177,65 @@ header>div#Logo>a>span {
 	text-shadow: #000000 0 0 2px;
 	border-bottom: 4px solid #00FF00;
 	font-family: 'Roboto Slab', serif;
+}
+
+#wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+#content {
+	flex: 1 0 auto;
+}
+
+footer {
+	float: left;
+	background-color: #808080;
+	width: 98%;
+	padding: 1%;
+	border-top: 5px solid #000000;
+	font-family: 'Roboto Slab', serif;
+}
+
+#site_name {
+	margin-right: 5%;
+	color: #000000;
+	font-size: 1.5em;
+	float: right;
+}
+
+#site_name>span {
+	font-family: 'Suez One', serif;
+}
+
+@media (max-width: 1080px) {
+	#clear {
+		clear: both;
+	}
+}
+
+#footer_menu {
+	font-size: 1.2em;
+}
+
+#footer_menu>a {
+	margin-left: 2%;
+	color: #00FF00;
+}
+
+#footer_menu>a:hover #rights>a:hover {
+	border-bottom: 1px solid silver;
+	color: #000000;
+}
+
+#rights {
+	float: left;
+	margin-left: 5%;
+	font-size: 1.1em;
+	margin-top: 20px;
+}
+
+#rights>a {
+	color: white;
 }
