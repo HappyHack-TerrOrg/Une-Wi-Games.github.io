@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Главная</title>
+    </head>
+    <frameset rows="10,70,20" cols="*" frameborder="0">
+		<frame src="head.html" name="head" scrolling="no" noresize>
+		<frame scr="любое имя.html" name="body" scrolling="yes" noresize>
+ 		<frame src="legs.html" name="legs">
+ 	</frameset>
+</html>
